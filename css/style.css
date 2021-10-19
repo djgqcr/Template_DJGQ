@@ -1,0 +1,147 @@
+:root{
+    --fuenteHeading: 'Libre Caslon Text', serif;
+    --fuenteParrafos: 'Lateef', cursive;
+
+    --gris: #E1E1E1;
+    --primario: #;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --headerBG: #4F5662;
+    --producBG: #E5E8EC;
+}
+
+html{
+    box-sizing: border-box;/*para hacer que las propiedades border, padd.. etc. no afecte el ancho de los elementos*/
+    font-size: 62.5%; /* 1 rem + 10px */
+}
+
+*, *:before, *:after{
+    box-sizing: inherit; /*hereda del elemento padre y ya el elemento se le asigno arriba las propiedades*/
+} 
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 1.5; /*interlineado un poco mas grande ya que es un blog para que se lea mejor*/
+}
+
+/**Globales **/
+
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%; 
+}
+
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/** Utilidades **/
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+} 
+
+.centrar-texto{
+    text-align: center;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+ 
+/** Header**/ 
+
+.header{
+    height: 50rem;
+    background-color: var(--headerBG);
+    background-size: cover; /*define la imagen de background*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 10rem;
+}
+/*Menu*/
+/*Logo del menu*/
+.logo{
+   color: var(--blanco); 
+}
+.logo__name{
+    font-weight: 700;
+}
+.logo__subname{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/*Barra de navegación*/
+.bar__link{
+    display: block;
+    text-align: center;
+    font-size: 2.1rem;
+    color: var(--blanco);
+}
+
+
+
+/*MQ*/
+@media (min-width: 480px) {
+    
+}
+@media (min-width: 768px) {
+    .bar{
+        display: flex;
+        gap: 2rem;
+    }
+    .menu{
+        display: flex;/*colocar elementos frente al otro*/
+        justify-content: space-between;/**alineado horizontal**/
+        align-items: center;
+    }
+}
+@media (min-width: 880px) {
+    
+}
+@media (min-width: 1024px) {
+    
+}
+
+/**/
