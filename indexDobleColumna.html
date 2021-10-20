@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template_DJGQ</title>
+    <title>Template_DJGQ con doble columna</title>
      <!--Preload-->
      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
      <link rel="preload" href="css/normalize.css" as="style">
@@ -34,8 +34,9 @@
         <p>Parrafo con explicación de la WEB</p>
     </div>
 </header>
-<section>
-    <div class="container">
+<section class="main">
+    <div class="container main__container"> 
+       <div class="product__container">
         <h2>Lista de Productos</h2>
         <div class="grid">
             <!--1-->
@@ -147,14 +148,54 @@
                         </div>
                     </a>
                 </div><!--Product-->
+            </div>
+        </div><!--Fin container grid products-->
 
-    </div><!--Fin container grid products-->
+        <aside class="sidebar"><!--sidebar-->
+            <h3>Barra Lateral</h3>
+            <ul class="sidebar__list"><!--cursos-->
+                <li class="widget-list"><!--widget-curso-->
+                    <h4>Articulo 1</h4>
+                    <p class="widget-list__label"> <!--widget-curso__label-->
+                        Precio: <span>Gratis</span>
+                    </p>
+                    <a class="button button--second" href="#">Botón</a>
+                </li>
 
+                <li class="widget-list">
+                    <h4>Articulo 2</h4>
+                    <p class="widget-list__label">
+                        Precio: <span>Gratis</span>
+                    </p>
+                    <a class="button button--second" href="#">Botón</a>
+                </li>
+
+                <li class="widget-list">
+                    <h4>Articulo 3</h4>
+                    <p class="widget-list__label">
+                        Precio: <span>Gratis</span>
+                    </p>
+                    <a class="button button--second" href="#">Botón</a>
+                </li>
+            </ul>
+
+
+            
+        </aside>
 </section>
 
-<section>
-    div.
+<section class="banner">
+    <div class="banner__first">
+        <div class="banner__label">
+            <p>Texto de la marca</p>
+        </div>
+
+        <div class="banner__logo">
+            <a href="#">Imagen</a>
+        </div>
+    </div>
 </section>
+
 
 <footer>
     <div class="container">
